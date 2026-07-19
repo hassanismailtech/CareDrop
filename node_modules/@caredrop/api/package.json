@@ -1,0 +1,16 @@
+{
+  "name": "@caredrop/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node dist/main.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "typescript": "^5.6.3"
+  }
+}
