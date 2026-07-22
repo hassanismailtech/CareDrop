@@ -2,6 +2,10 @@
 
 CareDrop is an on-demand, mobile-first medicine delivery platform operating in Nigeria. It bridges the gap between patients and licensed pharmacies by enabling users to seamlessly search for authentic medications, compare prices, upload prescriptions, and receive secure, fast doorstep delivery.
 
+## Live demo
+
+- Web app: [CareDrop](https://caredrop-brown.vercel.app/)
+
 ## Current scaffold
 
 This workspace now includes a lightweight monorepo scaffold for:
