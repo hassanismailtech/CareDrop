@@ -1,12 +1,17 @@
 import express from 'express';
+import authRoutes from './routes/auth.routes';
 
 const app = express();
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3001;
 
-app.get('/health', (_req, res) => {
-  res.json({ status: 'ok', service: 'caredrop-api' });
+app.use(express.json());
+
+app.use('/api/auth', authRoutes);
+
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'API is running' });
 });
 
-app.listen(port, () => {
-  console.log(`CareDrop API listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`CareDrop API is running on http://localhost:${PORT}`);
 });
